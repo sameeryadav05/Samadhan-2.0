@@ -1,0 +1,35 @@
+/* CounterLivePreview.css */
+.counter-card {
+  width: 320px;
+  background: #f3f4f6;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(144, 97, 249, .1);
+  margin-bottom: 20px;
+}
+.counter-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+.count {
+  font-size: 1.3rem;
+  margin: 0 10px;
+}
+.live-input {
+  width: 90%;
+  padding: 7px 10px;
+  margin-top: 12px;
+  border-radius: 5px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+.preview {
+  margin-top: 10px;
+  color: #6d28d9;
+}
