@@ -1,0 +1,26 @@
+.profile-card {
+  max-width: 250px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #fff;
+  margin: 20px auto;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.role {
+  color: gray;
+  margin: 5px 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: #555;
+}
