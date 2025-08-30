@@ -1,3 +1,6 @@
 [submodule "Day-18/Task-Management-system"]
 	path = Day-18/Task-Management-system
 	url = https://github.com/sameeryadav05/Note.git
+[submodule "Day-21"]
+	path = Day-21
+	url = https://github.com/sameeryadav05/React_Portfolio.git
