@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Weather-Box{
+    height: 90%;
+    width: 30%;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.17);
+        background-color: #3e326cad;
+        /* background: rgba(255, 255, 255, 0.13); 
+          backdrop-filter: blur(13px);    
+        -webkit-backdrop-filter: blur(13px);    */
+}
+.search-box #search{
+  position: absolute;
+  color: rgba(0, 0, 0, 0.518);
+  font-weight: bolder;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.search-box{
+    
+    width: 100%;
+    background:transparent;
+    /* background-color: aquamarine; */
+    /* border:1px solid black; */
+    height: 6%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right:0.5rem;
+    margin-top: 1.5rem;
+    
+}
+.search-box form{
+      height: 100%;
+          width: 80%;
+}
+.search-box input{
+    background-color: rgba(255, 255, 255, 0.203);
+    border: none;
+    outline: none;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2.5rem;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.search-box input::placeholder{
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.search-box .location{
+    width: 10%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.location span{
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+@media (max-width: 1000px) {
+  .Weather-Box {
+    min-height: 98%;
+        /* background-color: #3e326cc7; */
+    /* border-radius: 1rem; */
+    width: 99%;
+  }
+  .search-box{
+    height: 5%;
+  }
+}
