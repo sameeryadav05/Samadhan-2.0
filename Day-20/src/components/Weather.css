@@ -2,16 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width:0px;
 }
 .Weather-Box{
-    height: 90%;
+    height: fit-content;
     width: 30%;
+    color: white;
     border-radius: 1.5rem;
     box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.17);
         background-color: #3e326cad;
         /* background: rgba(255, 255, 255, 0.13); 
           backdrop-filter: blur(13px);    
         -webkit-backdrop-filter: blur(13px);    */
+}::-webkit-scrollbar {
+  display: none;
 }
 .search-box #search{
   position: absolute;
@@ -38,7 +42,7 @@
     
 }
 .search-box form{
-      height: 100%;
+      height: 2.5rem;
           width: 80%;
 }
 .search-box input{
@@ -54,9 +58,14 @@
     width: 100%;
     border-radius: 1.5rem;
 }
+.search-box input:focus{
+  border: 1px solid white;
+}
 .search-box input::placeholder{
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.596);
+    /* font-size: 1.1rem; */
+    /* color: rgba(255, 255, 255, 0.596); */
+    color: #ddd;
+    text-transform: uppercase;
 }
 
 .search-box .location{
@@ -76,14 +85,84 @@
     color: white;
     font-size: 2.5rem;
 }
+.hourly-Forecast{
+  padding: 0.5rem 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.274);
+  /* padding-bottom: 2rem; */
+}
+.hourly-Forecast .weather-list{
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  /* margin-bottom: -16px; */
+  padding-bottom: 16px;
+  gap: 34px;
+  scrollbar-color: transparent transparent; 
+  overflow-x: auto;
 
 
-@media (max-width: 1000px) {
+}
+.hourly-Forecast:hover .weather-list
+{
+  scrollbar-color: gray transparent;
+}
+
+.hourly-Forecast .weather-item .weather-icon{
+  width: 28px;
+  aspect-ratio: 1;
+}
+.hourly-Forecast .weather-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.weather-container .curr-weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 50px;
+}
+
+.curr-weather img{
+  width: 6rem;
+  aspect-ratio: 1;
+}
+.curr-weather h1{
+  display: flex;
+  font-weight: 900;
+  margin: 1rem 0px;
+  font-size: 3rem;
+}
+.curr-weather h1 span{
+  font-size: 2rem;
+
+}
+
+.curr-weather .description{
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 700px) {
   .Weather-Box {
-    min-height: 98%;
+    /* min-height: 60%; */
         /* background-color: #3e326cc7; */
     /* border-radius: 1rem; */
     width: 99%;
+  }
+  .search-box{
+    height: 5%;
+  }
+}
+@media (max-width: 1000px) and (min-width:700px) {
+  .Weather-Box {
+    /* min-height: 60%; */
+        /* background-color: #3e326cc7; */
+    /* border-radius: 1rem; */
+    /* width: %; */
+    width: 70%;
   }
   .search-box{
     height: 5%;
