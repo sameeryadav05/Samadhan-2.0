@@ -4,3 +4,6 @@
 [submodule "Day-21"]
 	path = Day-21
 	url = https://github.com/sameeryadav05/React_Portfolio.git
+[submodule "Day-16"]
+	path = Day-16
+	url = https://github.com/sameeryadav05/E-commerce-store.git
